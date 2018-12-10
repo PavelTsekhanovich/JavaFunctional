@@ -9,7 +9,6 @@ import java.util.UUID;
  * @author Pavel Tsekhanovcih 20.11.2018
  *
  * Write three operators:
- *
  * A reduce operator that accepts an initial value (seed) and a combiner function and then returns a new
  * function that combines all values in the given integer range (inclusively)
  * into one integer value (it's a simple form of reduction).
