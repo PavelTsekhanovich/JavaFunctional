@@ -21,6 +21,7 @@ public class Task1 {
         final int c = 4;
 
         Function<Integer, Double> function1 = x -> a * Math.pow(x, 2) + b * x + c;
+
         System.out.println(function1.apply(7));
 
     }

@@ -19,7 +19,10 @@ import java.util.stream.Stream;
 public class Task1 {
 
     public static Stream<String> createBadWordsDetectingStream(String text, List<String> badWords) {
-        return badWords.stream().filter(text::contains).distinct().sorted();
+        return badWords.stream()
+                .filter(text::contains)
+                .distinct()
+                .sorted();
     }
 
 }

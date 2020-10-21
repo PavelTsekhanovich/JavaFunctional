@@ -26,8 +26,12 @@ public class Task1 {
 
     public static void main(String[] args) {
         String[] words = {"aaaa", "aaa", "a", "aa"};
+
         Map<Boolean, List<String>> palindromeOrNoMap = Arrays.stream(words)
-                .collect(Collectors.partitioningBy(a -> a.equals(new StringBuilder(a).reverse().toString())));
+                .collect(Collectors.partitioningBy(a ->
+                        a.equals(new StringBuilder(a).reverse().toString())
+                ));
+
         System.out.println(palindromeOrNoMap);
     }
 }

@@ -36,7 +36,9 @@ public class Task1 {
     }
 
     private static <T> List<T> filter(List<T> inputList, Predicate<T> predicate) {
-        return inputList.stream().filter(predicate).collect(Collectors.toList());
+        return inputList.stream()
+                .filter(predicate)
+                .collect(Collectors.toList());
     }
 
     public static void main(String[] args) {
@@ -44,8 +46,10 @@ public class Task1 {
         List<Account> accountsWithTooMuchMoney = filter(ACCOUNTS, x
                 -> x.getBalance() >= 100000000 && !x.isLocked());
 
-        nonEmptyAccounts.stream().forEach(System.out::println);
-        accountsWithTooMuchMoney.stream().forEach(System.out::println);
+        nonEmptyAccounts.stream()
+                .forEach(System.out::println);
+        accountsWithTooMuchMoney.stream()
+                .forEach(System.out::println);
     }
 }
 
@@ -83,5 +87,14 @@ class Account {
         this.number = number;
         this.balance = balance;
         this.isLocked = isLocked;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "number='" + number + '\'' +
+                ", balance=" + balance +
+                ", isLocked=" + isLocked +
+                '}';
     }
 }

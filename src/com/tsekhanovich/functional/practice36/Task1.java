@@ -25,11 +25,14 @@ public class Task1 {
     private static final Set<User> USERS = new HashSet<>();
 
     public static Optional<User> findUserByLogin(String login) {
-        return USERS.stream().filter(i -> i.getLogin().equals(login)).findFirst();
+        return USERS.stream()
+                .filter(i -> i.getLogin().equals(login))
+                .findFirst();
     }
 
     public static void printBalanceIfNotEmpty(String userLogin) {
-        findUserByLogin(userLogin).map(User::getAccount)
+        findUserByLogin(userLogin)
+                .map(User::getAccount)
                 .map(Account::getBalance)
                 .filter(i -> i > 0)
                 .ifPresent(i -> System.out.println(userLogin + ": " + i));

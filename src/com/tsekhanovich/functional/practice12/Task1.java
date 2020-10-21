@@ -21,7 +21,8 @@ public class Task1 {
      * For an empty list it returns the always false predicate.
      */
     public static IntPredicate disjunctAll(List<IntPredicate> predicates) {
-        return predicates.stream().reduce(value -> false, IntPredicate::or);
+        return predicates.stream()
+                .reduce(value -> false, IntPredicate::or);
     }
 
 }

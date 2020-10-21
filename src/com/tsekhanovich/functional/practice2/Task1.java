@@ -17,8 +17,11 @@ public class Task1 {
         Numbers example1 = Math::max;
         Numbers example2 = (x, y) -> x > y ? x : y;
         Numbers example3 = (x, y) -> {
-            if (x > y) return x;
-            else return y;
+            if (x > y) {
+                return x;
+            } else {
+                return y;
+            }
         };
 
         System.out.println(example1.max(7, 9));

@@ -17,7 +17,9 @@ public class Task1 {
 
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(0, 1, 2, 3);
-        long val = numbers.stream().collect(Collectors.reducing(1, Math::multiplyExact));
+        long val = numbers.stream()
+                .collect(Collectors.reducing(1, Math::multiplyExact));
+
         System.out.println(val);
     }
 }

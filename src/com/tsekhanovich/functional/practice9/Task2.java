@@ -23,6 +23,7 @@ public class Task2 {
                 !Objects.equals(a, b) &&
                         !Objects.equals(b, c) &&
                         !Objects.equals(c, a);
+
         System.out.println(function.test(1, 2, 3));
         System.out.println(function.test(1, 1, 1));
     }

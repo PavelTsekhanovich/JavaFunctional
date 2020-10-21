@@ -17,7 +17,8 @@ import java.util.stream.LongStream;
 public class Task1 {
 
     public static long factorial(long n) {
-        return LongStream.rangeClosed(1, n).reduce(1, Math::multiplyExact);
+        return LongStream.rangeClosed(1, n)
+                .reduce(1, Math::multiplyExact);
     }
 
     public static void main(String[] args) {

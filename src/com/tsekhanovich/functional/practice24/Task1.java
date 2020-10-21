@@ -41,7 +41,8 @@ public class Task1 {
                 .flatMap(a -> a.getTransactions()
                         .stream()
                         .filter(t -> t.getState() == State.CANCELED))
-                .mapToLong(Transaction::getSum).sum();
+                .mapToLong(Transaction::getSum)
+                .sum();
     }
 
     public static void main(String[] args) {

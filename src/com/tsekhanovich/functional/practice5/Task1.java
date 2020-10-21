@@ -24,8 +24,10 @@ public class Task1 {
 
     public static void main(String[] args) {
 
-        Function<List<String>, List<String>> function1 = list ->
-                list.stream().distinct().sorted().collect(Collectors.toList());
+        Function<List<String>, List<String>> function1 = list -> list.stream()
+                .distinct()
+                .sorted()
+                .collect(Collectors.toList());
 
         Function<List<String>, List<String>> function2 = list ->
                 new ArrayList<>(new HashSet<>(list));

@@ -37,7 +37,10 @@ public class Task1 {
     public static long calcNumberOfEmployees(List<Department> departments, long threshold) {
         return departments.stream().
                 filter(s -> s.getCode().startsWith("111-")).
-                flatMap(s -> s.getEmployees().stream().filter(e -> e.getSalary() >= threshold)).count();
+                flatMap(s -> s.getEmployees()
+                        .stream()
+                        .filter(e -> e.getSalary() >= threshold))
+                .count();
     }
 
     public static void main(String[] args) {

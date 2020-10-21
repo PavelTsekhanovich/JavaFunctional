@@ -18,7 +18,9 @@ public class Task1 {
 
     public static void main(String[] args) {
         BiFunction<Long, Long, Long> function = (x, y) ->
-                LongStream.rangeClosed(x, y).reduce(1L, Math::multiplyExact);
+                LongStream.rangeClosed(x, y)
+                        .reduce(1L, Math::multiplyExact);
+
         System.out.println(function.apply(3L, 5L));
     }
 }

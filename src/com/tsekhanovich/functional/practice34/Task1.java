@@ -40,20 +40,21 @@ public class Task1 {
      * and sequentially applies each mapper to each value (perform a transformation)
      */
     public static final Function<List<IntUnaryOperator>, UnaryOperator<List<Integer>>> multifunctionalMapper1 =
-            x -> y -> y.stream().map(integer -> {
-                int result = integer;
-                for (IntUnaryOperator operator : x) {
-                    result = operator.applyAsInt(result);
-                }
-                return result;
-            }).collect(Collectors.toList());
+            x -> y -> y.stream()
+                    .map(integer -> {
+                        int result = integer;
+                        for (IntUnaryOperator operator : x) {
+                            result = operator.applyAsInt(result);
+                        }
+                        return result;
+                    }).collect(Collectors.toList());
 
     public static final Function<List<IntUnaryOperator>, UnaryOperator<List<Integer>>> multifunctionalMapper =
-            x -> y -> y.stream().map(integer
-                    -> x.stream()
-                    .reduce(IntUnaryOperator::andThen)
-                    .orElse(other -> other)
-                    .applyAsInt(integer))
+            x -> y -> y.stream()
+                    .map(integer -> x.stream()
+                            .reduce(IntUnaryOperator::andThen)
+                            .orElse(other -> other)
+                            .applyAsInt(integer))
                     .collect(Collectors.toList());
     /**
      * EXAMPLE: the operator transforms each number to the same number (perform the identity transformation)

@@ -17,7 +17,10 @@ import java.util.stream.IntStream;
 public class Task1 {
 
     public static IntStream createFilteringStream(IntStream evenStream, IntStream oddStream) {
-        return IntStream.concat(evenStream, oddStream).filter(s -> s % 3 == 0 && s % 5 == 0).sorted().skip(2);
+        return IntStream.concat(evenStream, oddStream)
+                .filter(s -> s % 3 == 0 && s % 5 == 0)
+                .sorted()
+                .skip(2);
     }
 
 }

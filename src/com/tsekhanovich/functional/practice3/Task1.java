@@ -23,11 +23,14 @@ public class Task1 {
 
         Strings<String, String, String, String, String, String, String, String> string2 =
                 (a, b, c, d, e, r, t) ->
-                        Stream.of(a, b, c, d, e, r, t).reduce("", String::concat).toUpperCase();
+                        Stream.of(a, b, c, d, e, r, t)
+                                .reduce("", String::concat).toUpperCase();
 
         Strings<String, String, String, String, String, String, String, String> string3 =
                 (a, b, c, d, e, f, g) ->
-                        Stream.of(a, b, c, d, e, f, g).map(String::toUpperCase).reduce("", String::concat);
+                        Stream.of(a, b, c, d, e, f, g)
+                                .map(String::toUpperCase)
+                                .reduce("", String::concat);
 
         System.out.println(string1.apply("A", "B", "C", "D", "E", "F", "G"));
         System.out.println(string2.apply("A", "B", "C", "D", "E", "F", "G"));
