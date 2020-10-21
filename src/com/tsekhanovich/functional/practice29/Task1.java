@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 /**
  * @author Pavel Tsekhanovcih 18.11.2018
- *
+ * <p>
  * There is a LogEntry class for monitoring user activity on your site. The class has three fields:
  * created: Date - the date of creating log entry
  * login: String - a user login

@@ -9,9 +9,9 @@ import java.util.stream.Collectors;
 
 /**
  * @author Pavel Tsekhanovcih 20.11.2018
- *
+ * <p>
  * Write three functions:
- *
+ * <p>
  * Multifunctional mapper (transformer) that accepts a list of operators (mappers) and returns a new operator.
  * The returned operator accepts a list of integer numbers and sequentially applies each mapper to each number in
  * the list (performs multiple transformations). The result is a list with transformed values.
@@ -57,7 +57,7 @@ public class Task1 {
                     .collect(Collectors.toList());
     /**
      * EXAMPLE: the operator transforms each number to the same number (perform the identity transformation)
-     *
+     * <p>
      * It returns a list of the same numbers.
      */
     public static final UnaryOperator<List<Integer>> identityTransformation =
@@ -66,7 +66,7 @@ public class Task1 {
     /**
      * The operator accepts an integer list.
      * It multiplies by two each integer number and then add one to its.
-     *
+     * <p>
      * The operator returns transformed integer list.
      */
     public static final UnaryOperator<List<Integer>> multTwoAndThenAddOneTransformation =
@@ -75,7 +75,7 @@ public class Task1 {
     /**
      * The operator accepts an integer list.
      * It squares each integer number and then get the next even number following it.
-     *
+     * <p>
      * The operator returns transformed integer list.
      */
     public static final UnaryOperator<List<Integer>> squareAndThenGetNextEvenNumberTransformation =

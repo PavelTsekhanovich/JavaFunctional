@@ -4,11 +4,11 @@ import java.util.function.Function;
 
 /**
  * @author Pavel Tsekhanovcih 09.11.2018
- *
+ * <p>
  * Write a lambda expression that accepts a long value and returns a next even number.
  * It is guaranteed an input number is non-negative.
  * Solution format. Submit your lambda expression in any valid format with ; on the end.
- *
+ * <p>
  * Examples: x -> x; (x) -> x; (x) -> { return x; };
  */
 

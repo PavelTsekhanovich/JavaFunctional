@@ -6,9 +6,9 @@ import java.util.stream.Collectors;
 
 /**
  * @author Pavel Tsekhanovcih 13.11.2018
- *
+ * <p>
  * Write a collector that evaluates the product of squares of integer numbers in a Stream<Integer>.
- *
+ * <p>
  * Important. You should write only the collector in any valid formats but without ; on the end.
  * It will be passed as an argument to the collect() method of a stream as shown below.
  */

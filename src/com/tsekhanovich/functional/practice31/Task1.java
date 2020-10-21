@@ -4,7 +4,7 @@ import java.util.stream.LongStream;
 
 /**
  * @author Pavel Tsekhanovcih 13.11.2018
- *
+ * <p>
  * Create a parallel LongStream for filtering prime numbers in the given range (inclusively).
  * The static method NumberUtils.isPrime(...some long number...) will be available for you during testing.
  * It returns true if the passed value is prime and false otherwise.

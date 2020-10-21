@@ -4,9 +4,9 @@ import java.util.stream.LongStream;
 
 /**
  * @author Pavel Tsekhanovcih 11.11.2018
- *
+ * <p>
  * Write a method for calculating the sum of odd numbers in the given interval (inclusively) using Stream API.
- *
+ * <p>
  * Important. Use the provided template for your method.
  * Pay attention to type of an argument and the returned value. Please, don't use cycles.
  */

@@ -4,10 +4,10 @@ import java.util.function.Function;
 
 /**
  * @author Pavel Tsekhanovcih 13.11.2018
- *
+ * <p>
  * Write a curried form of the function f(x,y,z)=x+y∗y+z∗z∗z using lambda expressions in Java 8 style.
  * The result and x, y, z must be integer numbers.
- *
+ * <p>
  * Write a curried function (using lambdas) that accepts four string arguments and concatenated all in one string
  * following the rules:
  * String cases: in the result string, first and second arguments must be in lower cases and third and fourth in

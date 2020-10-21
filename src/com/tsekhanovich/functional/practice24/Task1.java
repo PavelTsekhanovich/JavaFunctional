@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @author Pavel Tsekhanovcih 13.11.2018
- *
+ * <p>
  * You have two classes:
  * Transaction: uuid: String,  state: State (CANCELED, FINISHED, PROCESSING), sum: Long, created: Date
  * Account: number: String, balance: Long, transactions: List<Transaction>

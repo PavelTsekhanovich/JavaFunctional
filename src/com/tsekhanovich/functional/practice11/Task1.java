@@ -18,7 +18,9 @@ public class Task1 {
         System.out.println(result);
 
         Consumer<Integer> printer = System.out::println;
-        Consumer<Integer> devNull = (val) -> { int v = val * 2; };
+        Consumer<Integer> devNull = (val) -> {
+            int v = val * 2;
+        };
 
         Consumer<Integer> combinedConsumer = devNull.andThen(devNull.andThen(printer));
         combinedConsumer.accept(100);

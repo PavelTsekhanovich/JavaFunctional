@@ -5,10 +5,10 @@ import java.util.Base64;
 
 /**
  * @author Pavel Tsekhanovcih 11.11.2018
- *
+ * <p>
  * There is a class Request(data: String) for representing some XML requests in a payment system.
  * The class has a getter method getData() and a constructor with one argument (data). See below.
- *
+ * <p>
  * Typically, the value of data looks like shown below (in a human-readable format,
  * in processing it's a single line string).
  */

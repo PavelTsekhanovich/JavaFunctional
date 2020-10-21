@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 /**
  * @author Pavel Tsekhanovcih 18.11.2018
- *
+ * <p>
  * You have two classes:
  * Account: number: String, balance: Long
  * Transaction: uuid: String, sum: Long, account: Account
